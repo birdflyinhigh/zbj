@@ -15,6 +15,10 @@ class App extends Component {
                 <h1>Alex</h1>
                 <p>Alex is now here </p>
                 <Person/>
+                <Person/>
+                <Person/>
+                <Person/>
+                {/*使用component的好处是可以提高代码的重复利用性*/}
                 {/* 导入person模块*/}
             </div>
         //    return中只能有一个根 元素
