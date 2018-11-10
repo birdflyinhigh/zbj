@@ -14,10 +14,10 @@ class App extends Component {
             <div className="App">
                 <h1>Alex</h1>
                 <p>Alex is now here </p>
-                <Person/>
-                <Person/>
-                <Person/>
-                <Person/>
+                <Person name="alex" age="28"/>
+                <Person name="kevin" age="27">My hobbies: ladies</Person>
+                <Person name="zoe" age="29"/>
+                {/*传入name和age参数*/}
                 {/*使用component的好处是可以提高代码的重复利用性*/}
                 {/* 导入person模块*/}
             </div>

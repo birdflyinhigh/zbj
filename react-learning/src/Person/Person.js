@@ -3,8 +3,9 @@ import React from 'react';
 
 
 
-const person = () => {
-    return <p> I am a person named alex and {Math.floor(Math.random()*30)} years old ！</p>
+const person = (props) => {
+
+    return <p> I am a person named {props.name} and {props.age} years old ！</p>
 //    生成不同的东西，dynamic, {值}
 
 };
