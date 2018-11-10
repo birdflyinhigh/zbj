@@ -5,6 +5,9 @@ import Person from './Person/Person'
 // 最好导入的时候，最好使用首字母大写，因为jsx中所有的components用小写开头
 
 class App extends Component {
+    // 两种限制：
+    // 1. class要写成className, 因为class是关键预留字
+    // 2. JSX里面只能写一个根element, 不能并列写两个或者多个element
 
     render() {
         return (
