@@ -5,8 +5,18 @@ import React from 'react';
 
 const person = (props) => {
 
-    return <p> I am a person named {props.name} and {props.age} years old ！</p>
-//    生成不同的东西，dynamic, {值}
+    return (
+        <div>
+            <p>
+                I am a person named {props.name} and {props.age} years old ！
+            </p>
+            <p>
+                {props.children}
+                {/*传入children*/}
+            </p>
+        </div>
+        )
+
 
 };
 
