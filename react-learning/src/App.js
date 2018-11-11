@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Person from './Person/Person'
+
 // 最好导入的时候，最好使用首字母大写，因为jsx中所有的components用小写开头
 
 class App extends Component {
@@ -17,7 +18,16 @@ class App extends Component {
     }
 
     swithStateHandler = () => {
-        alert('hello')
+        //DON'T DO THIS  this.state.person[0].name = 'Jenny'
+        this.setState({
+                person: [
+                    {name: "alex-male", age: "86"},
+                    {name: "zoe-female", age: "31"},
+                    {name: "kevin-male", age: "35"},
+                ]
+            }
+        )
+
 
     }
 
@@ -34,7 +44,7 @@ class App extends Component {
                 {/*使用component的好处是可以提高代码的重复利用性*/}
                 {/* 导入person模块*/}
             </div>
-        //    return中只能有一个根 元素
+            //    return中只能有一个根 元素
         )
     }
 

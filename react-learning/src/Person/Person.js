@@ -16,7 +16,9 @@ const person = (props) => {
             </p>
         </div>
         )
-
+// 尽可能多的使用functional component ,
+//    还有一种class component
+//    state不能被更多的change, 只能被少量的change , 比如containers 
 
 };
 
